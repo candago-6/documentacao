@@ -565,7 +565,7 @@ Total planejado do backlog atual: **55 pontos**.
 
 | Marco | Pontos planejados restantes | Pontos reais restantes | Entregas concluidas | Data da atualizacao |
 |---|---:|---:|---:|---|
-| Inicio (Sprint 0) | 55 | 55 | 0/10 | 16-03-2026 |
+| Inicio (Kickoff) | 55 | 55 | 0/10 | 16-03-2026 |
 | Fim Sprint 1 | 0 | 0 | 0/10 | A preencher |
 | Fim Sprint 2 | 0 | 0 | 0/10 | A preencher |
 | Fim Sprint 3 | 0 | 0 | 0/10 | A preencher |
