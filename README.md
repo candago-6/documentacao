@@ -505,16 +505,15 @@ Backlog inicial para orientar a evolucao incremental do assistente de WhatsApp d
 
 | ID | Item de backlog | Historia de usuario | Prioridade | Criterio de aceite | Status |
 |---|---|---|---|---|---|
-| PB-01 | Recebimento de mensagens WhatsApp | Como cidadao, quero enviar mensagens e receber confirmacao de recebimento para iniciar meu atendimento. | Alta | Mensagens de texto sao recebidas, registradas e respondidas com confirmacao em ate 5 segundos. | Pendente |
-| PB-02 | Normalizacao e preprocessamento de texto | Como sistema, quero normalizar mensagens para reduzir ruido e melhorar a classificacao. | Alta | Pipeline aplica limpeza, tokenizacao e padronizacao antes da classificacao em 100% das mensagens validas. | Pendente |
-| PB-03 | Classificacao de intencao com ML | Como atendente, quero que o sistema identifique a intencao principal da mensagem para rotear corretamente cada caso. | Alta | Classificador retorna intencao e confianca; quando confianca for menor que limiar definido, deve acionar fallback. | Pendente |
+| PB-01 | Recebimento de mensagens WhatsApp | Como cidadao, quero enviar mensagens e receber confirmacao de recebimento para iniciar meu atendimento. | Alta | Mensagens de texto sao recebidas, registradas e respondidas com confirmacao em ate 5 segundos. | Concluido |
+| PB-02 | Normalizacao e preprocessamento de texto | Como sistema, quero normalizar mensagens para reduzir ruido e melhorar a classificacao. | Alta | Pipeline aplica limpeza, tokenizacao e padronizacao antes da classificacao em 100% das mensagens validas. | Concluido |
+| PB-03 | Geracao de respostas pre designadas | Como cidadao, quero receber respostas iniciais padronizadas para obter orientacao imediata no primeiro contato. | Alta | Sistema responde com templates validados por tipo de solicitacao e registra o envio no historico da conversa. | Concluido |
 | PB-04 | Orquestracao de fluxos de atendimento | Como plataforma, quero decidir automaticamente a proxima acao com base em intencao, contexto e regras de negocio. | Alta | Orquestrador chama o servico correto por classe mapeada e registra trilha de decisao. | Pendente |
-| PB-05 | Geracao de respostas contextualizadas | Como cidadao, quero receber orientacoes claras e objetivas de acordo com minha solicitacao. | Alta | Respostas sao geradas com contexto de sessao e seguem padrao de linguagem institucional. | Pendente |
-| PB-06 | Escalonamento para atendimento humano | Como cidadao, quero ser encaminhado a um atendente quando o bot nao tiver confianca suficiente na resposta. | Alta | Casos de baixa confianca ou erro sao encaminhados para fila humana com contexto da conversa. | Pendente |
-| PB-07 | Orientacao sobre documentacao necessaria | Como cidadao, quero saber quais documentos sao exigidos para cada tipo de reclamacao. | Media | Sistema retorna lista de documentos por tipo de demanda e orientacoes de envio. | Pendente |
-| PB-08 | Seguranca e conformidade LGPD | Como instituicao, quero proteger dados pessoais e rastrear acessos para atender requisitos legais. | Alta | Dados sensiveis sao mascarados em logs; acessos e operacoes criticas ficam auditaveis. | Pendente |
-| PB-09 | Base de conhecimento institucional | Como sistema, quero consultar conteudo oficial do Procon para responder com informacoes atualizadas. | Media | Respostas de orientacao referenciam base validada e exibem data de atualizacao do conteudo. | Pendente |
-| PB-10 | Agendamento online de atendimento | Como cidadao, quero agendar atendimento online para ser atendido sem precisar ir presencialmente ao Procon. | Baixa | Sistema oferece fluxo de agendamento online com escolha de data e horario, confirmando o agendamento ao final. | Pendente |
+| PB-05 | Classificacao de intencao com ML | Como atendente, quero que o sistema identifique a intencao principal da mensagem para rotear corretamente cada caso. | Alta | Classificador retorna intencao e confianca; quando confianca for menor que limiar definido, deve acionar fallback. | Pendente |
+| PB-06 | Seguranca e conformidade LGPD | Como instituicao, quero proteger dados pessoais e rastrear acessos para atender requisitos legais. | Alta | Dados sensiveis sao mascarados em logs; acessos e operacoes criticas ficam auditaveis. | Pendente |
+| PB-07 | Escalonamento para atendimento humano | Como cidadao, quero ser encaminhado a um atendente quando o bot nao tiver confianca suficiente na resposta. | Media | Casos de baixa confianca ou erro sao encaminhados para fila humana com contexto da conversa. | Pendente |
+| PB-08 | Base de conhecimento institucional | Como sistema, quero consultar conteudo oficial do Procon para responder com informacoes atualizadas. | Media | Respostas de orientacao referenciam base validada e exibem data de atualizacao do conteudo. | Concluido |
+| PB-09 | Agendamento online de atendimento | Como cidadao, quero agendar atendimento online para ser atendido sem precisar ir presencialmente ao Procon. | Baixa | Sistema oferece fluxo de agendamento online com escolha de data e horario, confirmando o agendamento ao final. | Pendente |
 
 ### Criterios de priorizacao
 
@@ -525,7 +524,7 @@ Backlog inicial para orientar a evolucao incremental do assistente de WhatsApp d
 
 ### Planejamento em 3 sprints (com pontuacao)
 
-### Sprint 1 - Fundacao do atendimento (21 pontos)
+### Sprint 1 - Fundacao do atendimento (13 pontos)
 
 | ID | Item | Pontos |
 |---|---|---|
@@ -541,7 +540,7 @@ Backlog inicial para orientar a evolucao incremental do assistente de WhatsApp d
 | PB-05 | Classificacao de intencao com ML | 8 |
 | PB-06 | Seguranca e conformidade LGPD | 5 |
 
-### Sprint 3 - Expansao de servicos (13 pontos)
+### Sprint 3 - Expansao de servicos (18 pontos)
 
 | ID | Item | Pontos |
 |---|---|---|
@@ -554,20 +553,19 @@ Backlog inicial para orientar a evolucao incremental do assistente de WhatsApp d
 - 3 pontos: baixa complexidade;
 - 5 pontos: media complexidade;
 - 8 pontos: alta complexidade;
-- 13 pontos: muito alta complexidade.
 
 ### Burndown das entregas
 
-Total planejado do backlog atual: **55 pontos**.
+Total planejado do backlog atual: **52 pontos**.
 
 #### Burndown geral por sprint
 
 | Marco | Pontos planejados restantes | Pontos reais restantes | Entregas concluidas | Data da atualizacao |
 |---|---:|---:|---:|---|
-| Inicio (Kickoff) | 42 | 42 | 0/9 | 16-04-2026 |
-| Fim Sprint 1 | 31 | 31 | 3/9 | A preencher |
-| Fim Sprint 2 | 0 | 0 | 0/9 | A preencher |
-| Fim Sprint 3 | 0 | 0 | 0/9 | A preencher |
+| Inicio (Kickoff) | 52 | 52 | 0/9 | 16-04-2026 |
+| Fim Sprint 1 | 39 | 39 | 3/9 | 13-04-2026 |
+| Fim Sprint 2 | 18 | A preencher | 3/9 | A preencher |
+| Fim Sprint 3 | 0 | A preencher | 3/9 | A preencher |
 
 #### Grafico burndown
 
@@ -575,9 +573,9 @@ Total planejado do backlog atual: **55 pontos**.
 xychart-beta
 	title "Burndown por Sprint (Pontos Restantes)"
 	x-axis [S0, S1, S2, S3]
-	y-axis "Pontos" 0 --> 55
-	line "planejado" [55, 31, 16, 0]
-	line "real" [55, 31, 0, 0]
+	y-axis "Pontos" 0 --> 52
+	line "planejado" [52, 39, 18, 0]
+	line "real" [52, 39, 39, 39]
 ```
 
 <!--#### Regra de atualizacao
