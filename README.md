@@ -531,24 +531,23 @@ Backlog inicial para orientar a evolucao incremental do assistente de WhatsApp d
 |---|---|---|
 | PB-01 | Recebimento de mensagens WhatsApp | 5 |
 | PB-02 | Normalizacao e preprocessamento de texto | 3 |
-| PB-04 | Orquestracao de fluxos de atendimento | 8 |
-| PB-05 | Geracao de respostas contextualizadas | 5 |
+| PB-03 | Geracao de respostas pré designadas | 5 |
 
 ### Sprint 2 - Inteligencia e governanca (21 pontos)
 
 | ID | Item | Pontos |
 |---|---|---|
-| PB-03 | Classificacao de intencao com ML | 8 |
-| PB-06 | Escalonamento para atendimento humano | 5 |
-| PB-08 | Seguranca e conformidade LGPD | 5 |
-| PB-07 | Orientacao sobre documentacao necessaria | 3 |
+| PB-04 | Orquestracao de fluxos de atendimento | 8 |
+| PB-05 | Classificacao de intencao com ML | 8 |
+| PB-06 | Seguranca e conformidade LGPD | 5 |
 
 ### Sprint 3 - Expansao de servicos (13 pontos)
 
 | ID | Item | Pontos |
 |---|---|---|
-| PB-09 | Base de conhecimento institucional | 5 |
-| PB-10 | Agendamento online de atendimento | 8 |
+| PB-07 | Escalonamento para atendimento humano | 5 |
+| PB-08 | Base de conhecimento institucional | 5 |
+| PB-09 | Agendamento online de atendimento | 8 |
 
 ### Escala de pontuacao utilizada
 
@@ -565,10 +564,10 @@ Total planejado do backlog atual: **55 pontos**.
 
 | Marco | Pontos planejados restantes | Pontos reais restantes | Entregas concluidas | Data da atualizacao |
 |---|---:|---:|---:|---|
-| Inicio (Kickoff) | 55 | 55 | 0/10 | 16-03-2026 |
-| Fim Sprint 1 | 0 | 0 | 0/10 | A preencher |
-| Fim Sprint 2 | 0 | 0 | 0/10 | A preencher |
-| Fim Sprint 3 | 0 | 0 | 0/10 | A preencher |
+| Inicio (Kickoff) | 42 | 42 | 0/9 | 16-04-2026 |
+| Fim Sprint 1 | 31 | 31 | 3/9 | A preencher |
+| Fim Sprint 2 | 0 | 0 | 0/9 | A preencher |
+| Fim Sprint 3 | 0 | 0 | 0/9 | A preencher |
 
 #### Grafico burndown
 
@@ -577,40 +576,9 @@ xychart-beta
 	title "Burndown por Sprint (Pontos Restantes)"
 	x-axis [S0, S1, S2, S3]
 	y-axis "Pontos" 0 --> 55
-	line "planejado" [55, 34, 13, 0]
-	line "real" [0, 0, 0, 0]
+	line "planejado" [55, 31, 16, 0]
+	line "real" [55, 31, 0, 0]
 ```
-
-##### Sprint 1 (21 pontos)
-
-| Checkpoint | Planejado restante | Real restante | Observacoes |
-|---|---:|---:|---|
-| D0 | 21 | 21 | Inicio da sprint |
-| D1 | 16 | A preencher | |
-| D2 | 11 | A preencher | |
-| D3 | 6 | A preencher | |
-| D4 | 0 | A preencher | Encerramento |
-
-##### Sprint 2 (21 pontos)
-
-| Checkpoint | Planejado restante | Real restante | Observacoes |
-|---|---:|---:|---|
-| D0 | 21 | 21 | Inicio da sprint |
-| D1 | 16 | A preencher | |
-| D2 | 11 | A preencher | |
-| D3 | 6 | A preencher | |
-| D4 | 0 | A preencher | Encerramento |
-
-##### Sprint 3 (13 pontos)
-
-| Checkpoint | Planejado restante | Real restante | Observacoes |
-|---|---:|---:|---|
-| D0 | 13 | 13 | Inicio da sprint |
-| D1 | 10 | A preencher | |
-| D2 | 7 | A preencher | |
-| D3 | 3 | A preencher | |
-| D4 | 0 | A preencher | Encerramento |
-
 
 <!--#### Regra de atualizacao
 - ao concluir uma historia, subtraia seus pontos do campo "Real restante";
