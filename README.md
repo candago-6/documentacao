@@ -510,9 +510,9 @@ Backlog inicial para orientar a evolucao incremental do assistente de WhatsApp d
 | PB-03 | Geracao de respostas pre designadas | Como cidadao, quero receber respostas iniciais padronizadas para obter orientacao imediata no primeiro contato. | Alta | Sistema responde com templates validados por tipo de solicitacao e registra o envio no historico da conversa. | Concluido |
 | PB-04 | Orquestracao de fluxos de atendimento | Como plataforma, quero decidir automaticamente a proxima acao com base em intencao, contexto e regras de negocio. | Alta | Orquestrador chama o servico correto por classe mapeada e registra trilha de decisao. | Pendente |
 | PB-05 | Classificacao de intencao com ML | Como atendente, quero que o sistema identifique a intencao principal da mensagem para rotear corretamente cada caso. | Alta | Classificador retorna intencao e confianca; quando confianca for menor que limiar definido, deve acionar fallback. | Pendente |
-| PB-06 | Seguranca e conformidade LGPD | Como instituicao, quero proteger dados pessoais e rastrear acessos para atender requisitos legais. | Alta | Dados sensiveis sao mascarados em logs; acessos e operacoes criticas ficam auditaveis. | Pendente |
-| PB-07 | Escalonamento para atendimento humano | Como cidadao, quero ser encaminhado a um atendente quando o bot nao tiver confianca suficiente na resposta. | Media | Casos de baixa confianca ou erro sao encaminhados para fila humana com contexto da conversa. | Pendente |
 | PB-08 | Base de conhecimento institucional | Como sistema, quero consultar conteudo oficial do Procon para responder com informacoes atualizadas. | Media | Respostas de orientacao referenciam base validada e exibem data de atualizacao do conteudo. | Concluido |
+| PB-07 | Escalonamento para atendimento humano | Como cidadao, quero ser encaminhado a um atendente quando o bot nao tiver confianca suficiente na resposta. | Media | Casos de baixa confianca ou erro sao encaminhados para fila humana com contexto da conversa. | Pendente |
+| PB-06 | Seguranca e conformidade LGPD | Como instituicao, quero proteger dados pessoais e rastrear acessos para atender requisitos legais. | Alta | Dados sensiveis sao mascarados em logs; acessos e operacoes criticas ficam auditaveis. | Pendente |
 | PB-09 | Agendamento online de atendimento | Como cidadao, quero agendar atendimento online para ser atendido sem precisar ir presencialmente ao Procon. | Baixa | Sistema oferece fluxo de agendamento online com escolha de data e horario, confirmando o agendamento ao final. | Pendente |
 
 ### Criterios de priorizacao
@@ -538,14 +538,14 @@ Backlog inicial para orientar a evolucao incremental do assistente de WhatsApp d
 |---|---|---|
 | PB-04 | Orquestracao de fluxos de atendimento | 8 |
 | PB-05 | Classificacao de intencao com ML | 8 |
-| PB-06 | Seguranca e conformidade LGPD | 5 |
+| PB-08 | Base de conhecimento institucional | 5 |
 
 ### Sprint 3 - Expansao de servicos (18 pontos)
 
 | ID | Item | Pontos |
 |---|---|---|
 | PB-07 | Escalonamento para atendimento humano | 5 |
-| PB-08 | Base de conhecimento institucional | 5 |
+| PB-06 | Seguranca e conformidade LGPD | 5 |
 | PB-09 | Agendamento online de atendimento | 8 |
 
 ### Escala de pontuacao utilizada
@@ -562,7 +562,7 @@ Total planejado do backlog atual: **52 pontos**.
 
 | Marco | Pontos planejados restantes | Pontos reais restantes | Entregas concluidas | Data da atualizacao |
 |---|---:|---:|---:|---|
-| Inicio (Kickoff) | 52 | 52 | 0/9 | 16-04-2026 |
+| Inicio (Kickoff) | 52 | 52 | 0/9 | 16-03-2026 |
 | Fim Sprint 1 | 39 | 39 | 3/9 | 13-04-2026 |
 | Fim Sprint 2 | 18 | A preencher | 3/9 | A preencher |
 | Fim Sprint 3 | 0 | A preencher | 3/9 | A preencher |
