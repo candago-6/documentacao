@@ -563,7 +563,7 @@ Total planejado do backlog atual: **52 pontos**.
 | Marco | Pontos planejados restantes | Pontos reais restantes | Entregas concluidas | Data da atualizacao |
 |---|---:|---:|---:|---|
 | Inicio (Kickoff) | 52 | 52 | 0/9 | 16-03-2026 |
-| Fim Sprint 1 | 39 | 39 | 3/9 | 13-04-2026 |
+| Fim Sprint 1 | 39 | 34 | 3/9 | 13-04-2026 |
 | Fim Sprint 2 | 18 | A preencher | 3/9 | A preencher |
 | Fim Sprint 3 | 0 | A preencher | 3/9 | A preencher |
 
@@ -575,7 +575,7 @@ xychart-beta
 	x-axis [S0, S1, S2, S3]
 	y-axis "Pontos" 0 --> 52
 	line "planejado" [52, 39, 18, 0]
-	line "real" [52, 39, 39, 39]
+	line "real" [52, 35, 35, 35]
 ```
 
 <!--#### Regra de atualizacao
