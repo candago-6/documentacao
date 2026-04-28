@@ -130,7 +130,7 @@ Total planejado do backlog atual: **52 pontos**.
 |---|---:|---:|---:|---|
 | Inicio (Kickoff) | 52 | 52 | 0/9 | 16-03-2026 |
 | Fim Sprint 1 | 13 | 0 | 3/3 | 28-04-2026 |
-| Fim Sprint 2 | 23 | 18 | 1/3 | A preencher |
+| Fim Sprint 2 | 21 | 16 | 1/3 | A preencher |
 | Fim Sprint 3 | 18 | 18 | 0/3 | A preencher |
 
 #### Grafico burndown
@@ -142,8 +142,8 @@ xychart-beta
 	title "Burndown Sprint 1 (Pontos Restantes)"
 	x-axis [W0, W1, W2, W3, W4, W5]
 	y-axis "Pontos" 0 --> 13
-	line "planejado" [13, 10, 8, 5, 3, 0]
-	line "real" [13, 13, 13, 13, 13, 0]
+	line "planejado" [13, 13, 10, 5, 3, 0]
+	line "real" [13, 13, 13, 10, 3, 0]
 ```
 
 ##### Sprint 2
@@ -152,9 +152,9 @@ xychart-beta
 xychart-beta
 	title "Burndown Sprint 2 (Pontos Restantes)"
 	x-axis [W0, W1, W2, W3, W4, W5]
-	y-axis "Pontos" 0 --> 23
-	line "planejado" [23, 18, 14, 9, 5, 0]
-	line "real" [23, 23, 23, 23, 23, 18]
+	y-axis "Pontos" 0 --> 21
+	line "planejado" [21, 13, 13, 8, 8, 0]
+	line "real" [21, 16, 16, 16, 16, 16]
 ```
 
 ##### Sprint 3
