@@ -129,9 +129,9 @@ Total planejado do backlog atual: **52 pontos**.
 | Marco | Pontos planejados restantes | Pontos reais restantes | Entregas concluidas | Data da atualizacao |
 |---|---:|---:|---:|---|
 | Inicio (Kickoff) | 52 | 52 | 0/9 | 16-03-2026 |
-| Fim Sprint 1 | 39 | 39 | 4/9 | 28-04-2026 |
-| Fim Sprint 2 | 18 | A preencher | 4/9 | A preencher |
-| Fim Sprint 3 | 0 | A preencher | 3/9 | A preencher |
+| Fim Sprint 1 | 13 | 0 | 3/3 | 28-04-2026 |
+| Fim Sprint 2 | 23 | 18 | 1/3 | A preencher |
+| Fim Sprint 3 | 18 | 18 | 0/3 | A preencher |
 
 #### Grafico burndown
 
@@ -140,10 +140,10 @@ Total planejado do backlog atual: **52 pontos**.
 ```mermaid
 xychart-beta
 	title "Burndown Sprint 1 (Pontos Restantes)"
-	x-axis [Inicio, Fim]
-	y-axis "Pontos" 0 --> 52
-	line "planejado" [52, 39]
-	line "real" [52, 35]
+	x-axis [W0, W1, W2, W3, W4, W5]
+	y-axis "Pontos" 0 --> 13
+	line "planejado" [13, 10, 8, 5, 3, 0]
+	line "real" [13, 13, 13, 13, 13, 0]
 ```
 
 ##### Sprint 2
@@ -151,10 +151,10 @@ xychart-beta
 ```mermaid
 xychart-beta
 	title "Burndown Sprint 2 (Pontos Restantes)"
-	x-axis [Inicio, Fim]
-	y-axis "Pontos" 0 --> 39
-	line "planejado" [39, 18]
-	line "real" [39, 39]
+	x-axis [W0, W1, W2, W3, W4, W5]
+	y-axis "Pontos" 0 --> 23
+	line "planejado" [23, 18, 14, 9, 5, 0]
+	line "real" [23, 23, 23, 23, 23, 18]
 ```
 
 ##### Sprint 3
@@ -162,10 +162,10 @@ xychart-beta
 ```mermaid
 xychart-beta
 	title "Burndown Sprint 3 (Pontos Restantes)"
-	x-axis [Inicio, Fim]
+	x-axis [W0, W1, W2, W3, W4, W5]
 	y-axis "Pontos" 0 --> 18
-	line "planejado" [18, 0]
-	line "real" [18, 18]
+	line "planejado" [18, 14, 11, 7, 4, 0]
+	line "real" [18, 18, 18, 18, 18, 18]
 ```
 
 <!--#### Regra de atualizacao
