@@ -154,7 +154,7 @@ xychart-beta
 	x-axis [W0, W1, W2, W3, W4, W5]
 	y-axis "Pontos" 0 --> 21
 	line "planejado" [21, 13, 13, 8, 8, 0]
-	line "real" [21, 16, 16, 16, 16, 16]
+	line "real" [21, 16, 16, 8, 4, 2]
 ```
 
 ##### Sprint 3
