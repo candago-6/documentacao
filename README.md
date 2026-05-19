@@ -16,27 +16,6 @@ O foco é automatizar o que for repetitivo, mantendo **clareza**, **rastreabilid
 
 ---
 
-## Pipeline de PLN
-
-A pipeline de PLN é responsável por transformar uma mensagem não estruturada em informação processável. Ela pode ser executada como parte do Web Service de Orquestração ou como um serviço separado.
-
-### Saída esperada (exemplo)
-
-Em alto nível, a saída deve incluir **intenção/classe** e um nível de **confiança**, para orientar o roteamento (resposta automática vs. pedir esclarecimento vs. humano).
-
-```json
-{
-	"mensagemOriginal": "Quero saber o andamento da minha reclamação 4589",
-	"intencao": "consultar_reclamacao",
-	"sentimento": "neutro",
-	"classePrevista": "consulta_andamento_processo",
-	"confianca": 0.94,
-	"acaoSugerida": "consultar_api_protocolos"
-}
-```
-
----
-
 ## Fluxo Geral de Atendimento
 
 ```text
@@ -75,7 +54,7 @@ Backlog inicial para orientar a evolucao incremental do assistente de WhatsApp d
 | PB-02 | Normalizacao e preprocessamento de texto | Como sistema, quero normalizar mensagens para reduzir ruido e melhorar a classificacao. | Alta | Pipeline aplica limpeza, tokenizacao e padronizacao antes da classificacao em 100% das mensagens validas. | Concluido |
 | PB-03 | Geracao de respostas pre designadas | Como cidadao, quero receber respostas iniciais padronizadas para obter orientacao imediata no primeiro contato. | Alta | Sistema responde com templates validados por tipo de solicitacao e registra o envio no historico da conversa. | Concluido |
 | PB-04 | Orquestracao de fluxos de atendimento | Como plataforma, quero decidir automaticamente a proxima acao com base em intencao, contexto e regras de negocio. | Alta | Orquestrador chama o servico correto por classe mapeada e registra trilha de decisao. | Pendente |
-| PB-05 | Classificacao de intencao com ML | Como atendente, quero que o sistema identifique a intencao principal da mensagem para rotear corretamente cada caso. | Alta | Classificador retorna intencao e confianca; quando confianca for menor que limiar definido, deve acionar fallback. | Pendente |
+| PB-05 | Classificacao de intencao com ML | Como atendente, quero que o sistema identifique a intencao principal da mensagem para rotear corretamente cada caso. | Alta | Classificador retorna intencao e confianca; quando confianca for menor que limiar definido, deve acionar fallback. | Concluido |
 | PB-06 | Base de conhecimento institucional | Como sistema, quero consultar conteudo oficial do Procon para responder com informacoes atualizadas. | Media | Respostas de orientacao referenciam base validada e exibem data de atualizacao do conteudo. | Concluido |
 | PB-07 | Escalonamento para atendimento humano | Como cidadao, quero ser encaminhado a um atendente quando o bot nao tiver confianca suficiente na resposta. | Media | Casos de baixa confianca ou erro sao encaminhados para fila humana com contexto da conversa. | Pendente |
 | PB-08 | Seguranca e conformidade LGPD | Como instituicao, quero proteger dados pessoais e rastrear acessos para atender requisitos legais. | Alta | Dados sensiveis sao mascarados em logs; acessos e operacoes criticas ficam auditaveis. | Pendente |
@@ -90,7 +69,7 @@ Backlog inicial para orientar a evolucao incremental do assistente de WhatsApp d
 
 ### Planejamento em 3 sprints (com pontuacao)
 
-### Sprint 1 - Fundacao do atendimento (13 pontos)
+### Sprint 1 - Fundação do atendimento (13 pontos)
 
 | ID | Item | Pontos |
 |---|---|---|
@@ -126,14 +105,15 @@ Total planejado do backlog atual: **52 pontos**.
 
 #### Burndown geral por sprint
 
-| Marco | Pontos planejados restantes | Pontos reais restantes | Entregas concluidas | Data da atualizacao |
+| Marco | Pontos planejados restantes | Pontos reais restantes | Entregas concluidas | Data da atualização |
 |---|---:|---:|---:|---|
 | Inicio (Kickoff) | 52 | 52 | 6/9 | 18-05-2026 |
 | Fim Sprint 1 | 13 | 0 | 3/3 | 28-04-2026 |
-| Fim Sprint 2 | 21 | 2 | 3/3 | 18-05-2026 |
+| Fim Sprint 2 | 21 | 0 | 3/3 | 18-05-2026 |
 | Fim Sprint 3 | 18 | 18 | 0/3 | A preencher |
 
-#### Grafico burndown
+#### Grafico burndown 
+(Verde: Real, Azul : Esperado)
 
 ##### Sprint 1
 
@@ -154,7 +134,7 @@ xychart-beta
 	x-axis [W0, W1, W2, W3, W4, W5]
 	y-axis "Pontos" 0 --> 21
 	line "planejado" [21, 13, 13, 8, 8, 0]
-	line "real" [21, 16, 16, 8, 4, 2]
+	line "real" [21, 16, 16, 16, 8, 0]
 ```
 
 ##### Sprint 3
