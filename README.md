@@ -50,15 +50,15 @@ Backlog inicial para orientar a evolucao incremental do assistente de WhatsApp d
 
 | ID | Item de backlog | Historia de usuario | Prioridade | Criterio de aceite | Status |
 |---|---|---|---|---|---|
-| PB-01 | Recebimento de mensagens WhatsApp | Como cidadao, quero enviar mensagens e receber confirmacao de recebimento para iniciar meu atendimento. | Alta | Mensagens de texto sao recebidas, registradas e respondidas com confirmacao em ate 5 segundos. | Concluido |
-| PB-02 | Normalizacao e preprocessamento de texto | Como sistema, quero normalizar mensagens para reduzir ruido e melhorar a classificacao. | Alta | Pipeline aplica limpeza, tokenizacao e padronizacao antes da classificacao em 100% das mensagens validas. | Concluido |
-| PB-03 | Geracao de respostas pre designadas | Como cidadao, quero receber respostas iniciais padronizadas para obter orientacao imediata no primeiro contato. | Alta | Sistema responde com templates validados por tipo de solicitacao e registra o envio no historico da conversa. | Concluido |
-| PB-04 | Orquestracao de fluxos de atendimento | Como plataforma, quero decidir automaticamente a proxima acao com base em intencao, contexto e regras de negocio. | Alta | Orquestrador chama o servico correto por classe mapeada e registra trilha de decisao. | Pendente |
-| PB-05 | Classificacao de intencao com ML | Como atendente, quero que o sistema identifique a intencao principal da mensagem para rotear corretamente cada caso. | Alta | Classificador retorna intencao e confianca; quando confianca for menor que limiar definido, deve acionar fallback. | Concluido |
+| PB-01 | Recebimento de mensagens WhatsApp | Como cidadão, quero enviar mensagens e receber confirmação de recebimento para iniciar meu atendimento. | Alta | Mensagens de texto sao recebidas, registradas e respondidas com confirmacao em ate 5 segundos. | Concluido |
+| PB-02 | Normalização e preprocessamento de texto | Como sistema, quero normalizar mensagens para reduzir ruido e melhorar a classificacao. | Alta | Pipeline aplica limpeza, tokenizacao e padronização antes da classificação em 100% das mensagens válidas. | Concluido |
+| PB-03 | Geração de respostas pré designadas | Como cidadão, quero receber respostas iniciais padronizadas para obter orientação imediata no primeiro contato. | Alta | Sistema responde com templates validados por tipo de solicitação e registra o envio no histórico da conversa. | Concluido |
+| PB-04 | Orquestracao de fluxos de atendimento | Como plataforma, quero decidir automaticamente a proxima ação com base em intenção, contexto e regras de negocio. | Alta | Orquestrador chama o servico correto por classe mapeada. | Pendente |
+| PB-05 | Classificação de intencao com ML | Como atendente, quero que o sistema identifique a intenção principal da mensagem para rotear corretamente cada caso. | Alta | Classificador retorna intenção e confianca; quando confiança for menor que limiar definido, deve acionar fallback. | Concluido |
 | PB-06 | Base de conhecimento institucional | Como sistema, quero consultar conteudo oficial do Procon para responder com informacoes atualizadas. | Media | Respostas de orientacao referenciam base validada e exibem data de atualizacao do conteudo. | Concluido |
 | PB-07 | Escalonamento para atendimento humano | Como cidadao, quero ser encaminhado a um atendente quando o bot nao tiver confianca suficiente na resposta. | Media | Casos de baixa confianca ou erro sao encaminhados para fila humana com contexto da conversa. | Pendente |
 | PB-08 | Seguranca e conformidade LGPD | Como instituicao, quero proteger dados pessoais e rastrear acessos para atender requisitos legais. | Alta | Dados sensiveis sao mascarados em logs; acessos e operacoes criticas ficam auditaveis. | Pendente |
-| PB-09 | Agendamento online de atendimento | Como cidadao, quero agendar atendimento online para ser atendido sem precisar ir presencialmente ao Procon. | Baixa | Sistema oferece fluxo de agendamento online com escolha de data e horario, confirmando o agendamento ao final. | Pendente |
+| PB-09 | Autoaprendizado | Como sistema, quero poder aprender com os feedbacks dos usuários para refinar minhas respostas. | Media | Sistema gera respostas melhores conforme interações com usuários | Pendente |
 
 ### Criterios de priorizacao
 
@@ -91,7 +91,7 @@ Backlog inicial para orientar a evolucao incremental do assistente de WhatsApp d
 |---|---|---|
 | PB-07 | Escalonamento para atendimento humano | 5 |
 | PB-08 | Seguranca e conformidade LGPD | 5 |
-| PB-09 | Agendamento online de atendimento | 8 |
+| PB-09 | Autoaprendizado | 8 |
 
 ### Escala de pontuacao utilizada
 
