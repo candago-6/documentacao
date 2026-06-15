@@ -33,24 +33,13 @@ O foco é automatizar o que for repetitivo, mantendo **clareza**, **rastreabilid
 
 ---
 
-## Pipeline de PLN
+## Pipeline de PLN / Geração de texto
 
 A pipeline de PLN é responsável por transformar uma mensagem não estruturada em informação processável. Ela pode ser executada como parte do Web Service de Orquestração ou como um serviço separado.
 
-### Saída esperada (exemplo)
+### Saída esperada
 
 Em alto nível, a saída deve incluir **intenção/classe** e um nível de **confiança**, para orientar o roteamento (resposta automática vs. pedir esclarecimento vs. humano).
-
-```json
-{
-	"mensagemOriginal": "Quero saber o andamento da minha reclamação 4589",
-	"intencao": "consultar_reclamacao",
-	"sentimento": "neutro",
-	"classePrevista": "consulta_andamento_processo",
-	"confianca": 0.94,
-	"acaoSugerida": "consultar_api_protocolos"
-}
-```
 
 ---
 
@@ -132,7 +121,7 @@ A matriz conecta requisitos, histórias, planejamento e evidências técnicas. P
 | REQ-04 | PB-06 | Sprint 2 | base de FAQ, endpoints RAG e respostas institucionais | Concluído |
 | REQ-05 | PB-07 | Sprint 3 | estados `waiting_human` e `human_handover` no backend | Concluído |
 | REQ-06, REQ-07 | PB-08 | Sprint 3 | persistência de conversas; autenticação; criptografia de CPF | Concluído |
-| REQ-09 | PB-09 | Sprint 3 | feedback e marcação de melhor resposta já são persistidos; falta mapear exemplos validados para o dataset do DistilBERT | Pendente |
+| REQ-09 | PB-09 | Sprint 3 | feedback e marcação de melhor resposta já são persistidos; mapeados exemplos validados para o dataset do DistilBERT | Concluído |
 
 Regras de rastreabilidade:
 
@@ -195,7 +184,7 @@ Uma história ou task é considerada concluída somente quando:
 
 ### Burndown das entregas
 
-Total planejado do backlog atual: **52 pontos**. Total concluído: **44 pontos**. Restam **8 pontos**, correspondentes somente ao `PB-09`.
+Total planejado do backlog atual: **52 pontos**. Total concluído: **44 pontos**.
 
 **Origem dos dados:** pontos das histórias do Product Backlog. O burndown considera uma história concluída somente após o atendimento da DoD; tasks internas do GitHub Projects não alteram diretamente a pontuação. Cada queda semanal corresponde à conclusão integral de uma história de `3`, `5` ou `8` pontos.
 
@@ -205,7 +194,7 @@ Total planejado do backlog atual: **52 pontos**. Total concluído: **44 pontos**
 |---|---:|---:|---:|---:|---|
 | Sprint 1 | 13 | 13 | 0 | 3/3 | Concluída |
 | Sprint 2 | 21 | 21 | 0 | 3/3 | Concluída |
-| Sprint 3 | 18 | 10 | 8 | 2/3 | Em andamento; somente `PB-09` pendente |
+| Sprint 3 | 18 | 18 | 0 | 3/3 | Concluída |
 
 #### Burndown Sprint 1
 
@@ -237,10 +226,8 @@ xychart-beta
 	x-axis [W0, W1, W2, W3]
 	y-axis "Pontos restantes" 0 --> 18
 	line "planejado" [18, 13, 8, 0]
-	line "real" [18, 13, 8, 8]
+	line "real" [18, 13, 13, 0]
 ```
-
-Ao concluir o `PB-09`, o burndown da Sprint 3 será encerrado com **18 pontos concluídos**, **0 pontos restantes** e **3/3 histórias concluídas**.
 
 ---
 
