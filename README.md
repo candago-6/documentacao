@@ -50,12 +50,12 @@ Backlog inicial para orientar a evolucao incremental do assistente de WhatsApp d
 
 | ID | Item de backlog | Historia de usuario | Prioridade | Criterio de aceite | Status |
 |---|---|---|---|---|---|
-| PB-01 | Recebimento de mensagens WhatsApp | Como cidadão, quero enviar mensagens e receber confirmação de recebimento para iniciar meu atendimento. | Alta | Mensagens de texto sao recebidas, registradas e respondidas com confirmacao em ate 5 segundos. | Concluido |
-| PB-02 | Normalização e preprocessamento de texto | Como sistema, quero normalizar mensagens para reduzir ruido e melhorar a classificacao. | Alta | Pipeline aplica limpeza, tokenizacao e padronização antes da classificação em 100% das mensagens válidas. | Concluido |
-| PB-03 | Geração de respostas pré designadas | Como cidadão, quero receber respostas iniciais padronizadas para obter orientação imediata no primeiro contato. | Alta | Sistema responde com templates validados por tipo de solicitação e registra o envio no histórico da conversa. | Concluido |
+| PB-01 | Recebimento de mensagens WhatsApp | Como cidadão, quero enviar mensagens e receber confirmação de recebimento para iniciar meu atendimento. | Alta | Mensagens de texto sao recebidas, registradas e respondidas com confirmacao em ate 5 segundos. | Concluído |
+| PB-02 | Normalização e preprocessamento de texto | Como sistema, quero normalizar mensagens para reduzir ruido e melhorar a classificacao. | Alta | Pipeline aplica limpeza, tokenizacao e padronização antes da classificação em 100% das mensagens válidas. | Concluído |
+| PB-03 | Geração de respostas pré designadas | Como cidadão, quero receber respostas iniciais padronizadas para obter orientação imediata no primeiro contato. | Alta | Sistema responde com templates validados por tipo de solicitação e registra o envio no histórico da conversa. | Concluído |
 | PB-04 | Orquestracao de fluxos de atendimento | Como plataforma, quero decidir automaticamente a proxima ação com base em intenção, contexto e regras de negocio. | Alta | Orquestrador chama o servico correto por classe mapeada. | Pendente |
-| PB-05 | Classificação de intencao com ML | Como atendente, quero que o sistema identifique a intenção principal da mensagem para rotear corretamente cada caso. | Alta | Classificador retorna intenção e confianca; quando confiança for menor que limiar definido, deve acionar fallback. | Concluido |
-| PB-06 | Base de conhecimento institucional | Como sistema, quero consultar conteudo oficial do Procon para responder com informacoes atualizadas. | Media | Respostas de orientacao referenciam base validada e exibem data de atualizacao do conteudo. | Concluido |
+| PB-05 | Classificação de intencao com ML | Como atendente, quero que o sistema identifique a intenção principal da mensagem para rotear corretamente cada caso. | Alta | Classificador retorna intenção e confianca; quando confiança for menor que limiar definido, deve acionar fallback. | Concluído |
+| PB-06 | Base de conhecimento institucional | Como sistema, quero consultar conteudo oficial do Procon para responder com informacoes atualizadas. | Media | Respostas de orientacao referenciam base validada e exibem data de atualizacao do conteudo. | Concluído |
 | PB-07 | Escalonamento para atendimento humano | Como cidadao, quero ser encaminhado a um atendente quando o bot nao tiver confianca suficiente na resposta. | Media | Casos de baixa confianca ou erro sao encaminhados para fila humana com contexto da conversa. | Pendente |
 | PB-08 | Seguranca e conformidade LGPD | Como instituicao, quero proteger dados pessoais e rastrear acessos para atender requisitos legais. | Alta | Dados sensiveis sao mascarados em logs; acessos e operacoes criticas ficam auditaveis. | Pendente |
 | PB-09 | Autoaprendizado | Como sistema, quero poder aprender com os feedbacks dos usuários para refinar minhas respostas. | Media | Sistema gera respostas melhores conforme interações com usuários | Pendente |
@@ -114,43 +114,43 @@ Total planejado do backlog atual: **52 pontos**.
 
 #### Burndown Kanban consolidado (todos os projetos)
 
-Atualizacao das tarefas Kanban atribuídas ao usuário **@caiquefrd**.
+Atualização das tarefas Kanban atribuídas ao usuário **@caiquefrd**.
 
 - Total de tasks: **28**
-- Concluidas: **27**
+- Concluídas: **27**
 - Pendentes: **1**
 - Data da atualização: **15-06-2026**
 
 | Repositório | Task | Título | Status |
 |---|---:|---|---|
-| backend | #100 | 09.5 Implementação com RAG | Concluido |
-| backend | #93 | 09.4 Rota para modelo de IA | Concluido |
-| backend | #88 | 09.3  Fine tune com dataset coerente | Concluido |
-| backend | #72 | 09.2 Testar desempenho do modelo de IA | Concluido |
-| backend | #71 | 09.1 Configurar modelo | Concluido |
-| backend | #50 | 06.6 – Criar guia de execução do sistema | Concluido |
+| backend | #100 | 09.5 Implementação com RAG | Concluído |
+| backend | #93 | 09.4 Rota para modelo de IA | Concluído |
+| backend | #88 | 09.3  Fine tune com dataset coerente | Concluído |
+| backend | #72 | 09.2 Testar desempenho do modelo de IA | Concluído |
+| backend | #71 | 09.1 Configurar modelo | Concluído |
+| backend | #50 | 06.6 – Criar guia de execução do sistema | Concluído |
 | backend | #49 | 06.5 – Registrar decisões técnicas do projeto | Pendente |
-| backend | #48 | 06.4 – Documentar pipeline de PLN | Concluido |
-| backend | #46 | 06.2 – Documentar arquitetura do sistema | Concluido |
-| backend | #45 | 06.1 – Criar README do projeto | Concluido |
-| backend | #44 | 05.7 – Testar pipeline completo | Concluido |
-| backend | #43 | 05.6 – Criar arquitetura modular do pipeline | Concluido |
-| backend | #42 | 05.5 – Integrar etapa de inferência do modelo | Concluido |
-| backend | #41 | 05.4 – Implementar normalização de texto | Concluido |
-| backend | #40 | 05.3 – Implementar tokenização | Concluido |
-| backend | #39 | 05.2 – Implementar limpeza de texto | Concluido |
-| backend | #38 | 05.1 – Definir etapas do pipeline de PLN | Concluido |
-| backend | #37 | 04.7 – Definir estrutura de saída do modelo | Concluido |
-| backend | #35 | 04.5 – Implementar modelo de classificação ou extração | Concluido |
-| backend | #34 | 04.4 – Implementar pré-processamento de texto | Concluido |
-| backend | #33 | 04.3 – Criar dataset inicial | Concluido |
-| backend | #32 | 04.2 – Selecionar modelo base de PLN | Concluido |
-| backend | #31 | 04.1 – Definir tarefa de PLN e Machine Learning | Concluido |
-| backend | #29 | 03.6 – Implementar logs de eventos | Concluido |
-| backend | #20 | 02.3 – Implementar função de geração de resposta | Concluido |
-| backend | #18 | 02.1 Definir abordagem de geração de texto (templates ou modelo de linguagem) | Concluido |
-| backend | #11 | 01.2 Criar estrutura inicial do projeto | Concluido |
-| backend | #10 | 01.1 Definir tecnologia do serviço (ex: FastAPI, Express, etc.) | Concluido |
+| backend | #48 | 06.4 – Documentar pipeline de PLN | Concluído |
+| backend | #46 | 06.2 – Documentar arquitetura do sistema | Concluído |
+| backend | #45 | 06.1 – Criar README do projeto | Concluído |
+| backend | #44 | 05.7 – Testar pipeline completo | Concluído |
+| backend | #43 | 05.6 – Criar arquitetura modular do pipeline | Concluído |
+| backend | #42 | 05.5 – Integrar etapa de inferência do modelo | Concluído |
+| backend | #41 | 05.4 – Implementar normalização de texto | Concluído |
+| backend | #40 | 05.3 – Implementar tokenização | Concluído |
+| backend | #39 | 05.2 – Implementar limpeza de texto | Concluído |
+| backend | #38 | 05.1 – Definir etapas do pipeline de PLN | Concluído |
+| backend | #37 | 04.7 – Definir estrutura de saída do modelo | Concluído |
+| backend | #35 | 04.5 – Implementar modelo de classificação ou extração | Concluído |
+| backend | #34 | 04.4 – Implementar pré-processamento de texto | Concluído |
+| backend | #33 | 04.3 – Criar dataset inicial | Concluído |
+| backend | #32 | 04.2 – Selecionar modelo base de PLN | Concluído |
+| backend | #31 | 04.1 – Definir tarefa de PLN e Machine Learning | Concluído |
+| backend | #29 | 03.6 – Implementar logs de eventos | Concluído |
+| backend | #20 | 02.3 – Implementar função de geração de resposta | Concluído |
+| backend | #18 | 02.1 Definir abordagem de geração de texto (templates ou modelo de linguagem) | Concluído |
+| backend | #11 | 01.2 Criar estrutura inicial do projeto | Concluído |
+| backend | #10 | 01.1 Definir tecnologia do serviço (ex: FastAPI, Express, etc.) | Concluído |
 
 #### Grafico burndown 
 (Verde: Real, Azul : Esperado)
