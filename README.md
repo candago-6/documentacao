@@ -112,6 +112,46 @@ Total planejado do backlog atual: **52 pontos**.
 | Fim Sprint 2 | 21 | 0 | 3/3 | 18-05-2026 |
 | Fim Sprint 3 | 18 | 18 | 0/3 | A preencher |
 
+#### Burndown Kanban consolidado (todos os projetos)
+
+Atualizacao das tarefas Kanban atribuídas ao usuário **@caiquefrd**.
+
+- Total de tasks: **28**
+- Concluidas: **27**
+- Pendentes: **1**
+- Data da atualização: **15-06-2026**
+
+| Repositório | Task | Título | Status |
+|---|---:|---|---|
+| backend | #100 | 09.5 Implementação com RAG | Concluido |
+| backend | #93 | 09.4 Rota para modelo de IA | Concluido |
+| backend | #88 | 09.3  Fine tune com dataset coerente | Concluido |
+| backend | #72 | 09.2 Testar desempenho do modelo de IA | Concluido |
+| backend | #71 | 09.1 Configurar modelo | Concluido |
+| backend | #50 | 06.6 – Criar guia de execução do sistema | Concluido |
+| backend | #49 | 06.5 – Registrar decisões técnicas do projeto | Pendente |
+| backend | #48 | 06.4 – Documentar pipeline de PLN | Concluido |
+| backend | #46 | 06.2 – Documentar arquitetura do sistema | Concluido |
+| backend | #45 | 06.1 – Criar README do projeto | Concluido |
+| backend | #44 | 05.7 – Testar pipeline completo | Concluido |
+| backend | #43 | 05.6 – Criar arquitetura modular do pipeline | Concluido |
+| backend | #42 | 05.5 – Integrar etapa de inferência do modelo | Concluido |
+| backend | #41 | 05.4 – Implementar normalização de texto | Concluido |
+| backend | #40 | 05.3 – Implementar tokenização | Concluido |
+| backend | #39 | 05.2 – Implementar limpeza de texto | Concluido |
+| backend | #38 | 05.1 – Definir etapas do pipeline de PLN | Concluido |
+| backend | #37 | 04.7 – Definir estrutura de saída do modelo | Concluido |
+| backend | #35 | 04.5 – Implementar modelo de classificação ou extração | Concluido |
+| backend | #34 | 04.4 – Implementar pré-processamento de texto | Concluido |
+| backend | #33 | 04.3 – Criar dataset inicial | Concluido |
+| backend | #32 | 04.2 – Selecionar modelo base de PLN | Concluido |
+| backend | #31 | 04.1 – Definir tarefa de PLN e Machine Learning | Concluido |
+| backend | #29 | 03.6 – Implementar logs de eventos | Concluido |
+| backend | #20 | 02.3 – Implementar função de geração de resposta | Concluido |
+| backend | #18 | 02.1 Definir abordagem de geração de texto (templates ou modelo de linguagem) | Concluido |
+| backend | #11 | 01.2 Criar estrutura inicial do projeto | Concluido |
+| backend | #10 | 01.1 Definir tecnologia do serviço (ex: FastAPI, Express, etc.) | Concluido |
+
 #### Grafico burndown 
 (Verde: Real, Azul : Esperado)
 
